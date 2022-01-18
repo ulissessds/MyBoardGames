@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "518700596473",
+    "project_id": "myboardgames-pdm2021",
+    "storage_bucket": "myboardgames-pdm2021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518700596473:android:74559bf5aac91579b27628",
+        "android_client_info": {
+          "package_name": "com.example.myboardgames"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "518700596473-qt2qomvkbf3ap49m08u5qs8sr9rdd2jm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwbKGx11HvGo055_46NLIWPejZ1tOy5Pw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "518700596473-qt2qomvkbf3ap49m08u5qs8sr9rdd2jm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

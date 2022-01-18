@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".fragment.addBoardGameFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shelf_bg">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/newBG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/aldrich"
+                android:text="Adicionar Novo Jogo"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/inputBGImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/blank_box"
+                android:background="@drawable/input_photo"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/newBG"
+                tools:ignore="InvalidId" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabBGCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-40dp"
+                android:layout_marginBottom="-30dp"
+                android:backgroundTint="#1D1D1E"
+                android:elevation="12dp"
+                android:src="@drawable/ic_baseline_camera_alt_24"
+                app:backgroundTint="#1D1D1E"
+                app:fabCustomSize="80dp"
+                app:layout_constraintBottom_toBottomOf="@+id/inputBGImage"
+                app:layout_constraintStart_toEndOf="@+id/inputBGImage"
+                app:maxImageSize="50dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/inputBGName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="46dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/ic_board_games"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Nome do Jogo"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inputBGImage" />
+
+            <EditText
+                android:id="@+id/inputBGCategory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/ic_baseline_label_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Categoria"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/inputBGName"
+                app:layout_constraintStart_toStartOf="@+id/inputBGName"
+                app:layout_constraintTop_toBottomOf="@+id/inputBGName" />
+
+            <EditText
+                android:id="@+id/inputBGNumberOfPlayers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/ic_people"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Número de Jogadores"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/inputBGCategory"
+                app:layout_constraintStart_toStartOf="@+id/inputBGCategory"
+                app:layout_constraintTop_toBottomOf="@+id/inputBGCategory" />
+
+            <EditText
+                android:id="@+id/inputBGPlayTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/ic_time"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Tempo de Partida"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/inputBGNumberOfPlayers"
+                app:layout_constraintStart_toStartOf="@+id/inputBGNumberOfPlayers"
+                app:layout_constraintTop_toBottomOf="@+id/inputBGNumberOfPlayers" />
+
+            <EditText
+                android:id="@+id/inputBGPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/ic_baseline_attach_money_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Preço do Jogo"
+                android:inputType="numberDecimal"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/inputBGPlayTime"
+                app:layout_constraintStart_toStartOf="@+id/inputBGPlayTime"
+                app:layout_constraintTop_toBottomOf="@+id/inputBGPlayTime" />
+
+            <Button
+                android:id="@+id/btnRegisterBG"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/input_bg"
+                android:backgroundTint="#4000FFFF"
+                android:text="Adicionar Jogo"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/inputBGPrice"
+                app:layout_constraintStart_toStartOf="@+id/inputBGPrice"
+                app:layout_constraintTop_toBottomOf="@+id/inputBGPrice" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
